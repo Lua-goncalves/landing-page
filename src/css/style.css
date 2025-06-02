@@ -72,15 +72,82 @@ body{
     font-family: bold;
 }
 
-@media(max-width: 425px){
+@media(max-width: 1225px){
+    .hero{
+        height: 60vh;
+        display: flex;
+    }
+    .hero h1{
+       font-size: 2.3rem;
+    }  
+}
+@media(max-width:1058px){
     .hero{
         height: 60vh;
     }
-    .hero h2{
+    .hero h1{
+        font-size: 2rem;
+
+    }
+    .hero h3{
         font-size: 2.5rem;
     }
 }
 
+@media(max-width:958px){
+    .hero{
+        height: 60vh;
+    }
+    .hero h1{
+        font-size: 1.8rem;
+        letter-spacing: 3px; 
+    }
+    .hero h3{
+        font-size: 2rem;
+    }
+}
+@media(max-width:831px){
+    .hero{
+        height: 60vh;
+
+    }
+    .hero h1{
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+    .hero h3{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:794px){
+    .hero{
+        height: 60vh;
+    }
+    .hero h1{
+        font-size: 1.8rem;
+        
+    }
+    .hero h3{
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:718px){
+    .hero{
+        display: flex;
+    }
+    .hero h1{
+        font-size: 1.8rem;
+    }
+    .hero h3{
+        font-size: 1.8rem;
+    }
+}
+@media(max-width:710px){
+    .hero{
+        width: 90vh;
+    }
+}
 .about{
     grid-area:about ;
    display:grid ;
@@ -140,15 +207,32 @@ body{
 
 
 
-@media(max-width: 425px){
-    .about .item {
-        text-align: center;
-    }
-    .about{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4);
+@media(max-width: 1427px){
+    .about .btn-know-more{
+        font-size: 1.7rem;
+        margin: 10px;
     }
 }
+@media(max-width: 1427px){
+    .about .btn-know-more{
+        padding: 10px;
+    }
+    
+}
+@media(max-width: 1101px){
+    .about .btn-know-more{
+        padding: 0;
+    }
+    
+}
+@media(max-width: 1101px){
+    .about .btn-know-more{
+        padding: auto;
+
+    }
+    
+}
+
 
 .services{
     text-align: center;
