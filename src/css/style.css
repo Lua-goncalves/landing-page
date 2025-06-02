@@ -151,18 +151,12 @@ body{
 }
 
 .services{
-    /* grid-area:services ;
-    display: grid; */
-    /* grid-template-columns: 1fr 1fr;  */
     text-align: center;
-        grid-area: services;
-        display: flex;
-        background-color:#D96C3B ;
-        flex-direction: column;
-        text-align: center;
-        
-        
-    
+    grid-area: services;
+    display: flex;
+    background-color:#D96C3B ;
+    flex-direction: column;
+    text-align: center;  
 }
 
 .services .service{
@@ -184,10 +178,9 @@ body{
 
 .services .service ul li{
     font-size: 2.5rem;
-    font-weight: 300;
-    max-width: 400px;
+    font-weight: 400;
     margin: 20px auto 0;
-    line-height: 25px;
+    line-height: 20px;
     color: var(--branco);
     margin-top: 15px;
 }
@@ -195,23 +188,23 @@ body{
 .services .service p {
     font-size: 1.8rem;
     font-weight: 400;
-    max-width: 400px;
-    margin: 20px auto 0;
-    line-height: 25px;
     color: var(--branco);
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
-.services .service a{
-    
-    align-self: flex-start;
+.services .service .btn-services{
     color: var(--azul-escuro);
-
- }
-
- .services .service a:hover{
-    font-weight: 700;
-    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: 0.3s;
+    padding: 10px 30px;
+    width: 35%;
+  
+}
+ .services .service .btn-services:hover{
+    background-color:var(--branco);
  }
 
 
