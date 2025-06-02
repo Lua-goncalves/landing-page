@@ -34,17 +34,11 @@ body{
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
-    background-color:;
-    
-    
+      
 }
 .header .logo{
-    /* font-size: 3rem;
-    font-weight: 700;
-    transition: 0.3s; */
     width: 20%;
-    height: 20%;
-    
+    height: 20%;  
 }
 
 .header a:hover h1{
@@ -95,8 +89,6 @@ body{
    max-width: var(--max-width-size);
    margin: 0 auto;
    
-   
-   
 }
 
 .about .image{
@@ -127,9 +119,17 @@ body{
     color:var(--branco);
  }
  
-
+.about .btn-know-more{
+    color: var(--branco);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: 0.3s;
+    padding: 10px 30px;
+    width: 35%;
+}
  .about .item .btn-know-more:hover{
-    font-weight: 700;
+    background-color: coral;
  }
 .about .image.right{
     background: url('../images/foto-2.jpeg') center center no-repeat;
