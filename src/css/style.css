@@ -11,7 +11,7 @@ body{
                          "services services services services"
                          "projects projects projects projects"
                          "footer footer footer footer";
-    grid-template-columns:repeat(4, 1fr) ;  
+    /* grid-template-columns:repeat(1fr) ;   */
     font-size: 1.6rem;  
     font-family: 'Roboto', sans-serif;     
     font-weight: 400;   
@@ -21,7 +21,7 @@ body{
 .header{
     grid-area:header ;
     background-color:var(--azul-escuro);
-    color: #fff;
+    color:var(--branco);
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,9 +47,10 @@ body{
 
 .hero{
     grid-area:hero ;
-    height:89vh;
+    height:100vh;
     background: url('../images/hero-5.jpg') center center no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +58,9 @@ body{
     gap: 30px;
     margin-top: 50px;
     color: var(--branco);
+    white-space: nowrap;
+    
+ 
 }
 .hero h1{
     font-weight:700;
@@ -72,82 +76,19 @@ body{
     font-family: bold;
 }
 
-@media(max-width: 1225px){
+@media(max-width: 445px){
     .hero{
-        height: 60vh;
-        display: flex;
+        padding:0 auto;
     }
     .hero h1{
-       font-size: 2.3rem;
+       font-size:2rem;
+       margin: 10px;
     }  
-}
-@media(max-width:1058px){
-    .hero{
-        height: 60vh;
-    }
-    .hero h1{
-        font-size: 2rem;
-
-    }
     .hero h3{
         font-size: 2.5rem;
     }
 }
 
-@media(max-width:958px){
-    .hero{
-        height: 60vh;
-    }
-    .hero h1{
-        font-size: 1.8rem;
-        letter-spacing: 3px; 
-    }
-    .hero h3{
-        font-size: 2rem;
-    }
-}
-@media(max-width:831px){
-    .hero{
-        height: 60vh;
-
-    }
-    .hero h1{
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-    }
-    .hero h3{
-        font-size: 1.7rem;
-    }
-}
-@media(max-width:794px){
-    .hero{
-        height: 60vh;
-    }
-    .hero h1{
-        font-size: 1.8rem;
-        
-    }
-    .hero h3{
-        font-size: 1.8rem;
-    }
-}
-
-@media(max-width:718px){
-    .hero{
-        display: flex;
-    }
-    .hero h1{
-        font-size: 1.8rem;
-    }
-    .hero h3{
-        font-size: 1.8rem;
-    }
-}
-@media(max-width:710px){
-    .hero{
-        width: 90vh;
-    }
-}
 .about{
     grid-area:about ;
    display:grid ;
@@ -177,6 +118,7 @@ body{
     font-weight: 700;
     font-size: 3rem;
     color: var(--laranja-queimado);
+    white-space: nowrap;
  }
 
  .about .item p{
@@ -188,15 +130,20 @@ body{
  
 .about .btn-know-more{
     color: var(--branco);
+    background-color: var(--laranja-queimado);
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
     border-radius: 50px;
     transition: 0.3s;
-    padding: 10px 30px;
-    width: 35%;
+    padding: 12px 24px;
+    width: 50%;
+    white-space: nowrap;
+    max-width: none;
+    min-width: 160px;
 }
  .about .item .btn-know-more:hover{
-    background-color: coral;
+    background-color: #FA8072;
  }
 .about .image.right{
     background: url('../images/foto-2.jpeg') center center no-repeat;
@@ -207,30 +154,16 @@ body{
 
 
 
-@media(max-width: 1427px){
-    .about .btn-know-more{
-        font-size: 1.7rem;
-        margin: 10px;
+@media(max-width: 425px){
+    .about{
+        grid-template-columns: 1fr(4);
+        text-align: center;
+        padding: 8px;
     }
-}
-@media(max-width: 1427px){
-    .about .btn-know-more{
-        padding: 10px;
-    }
-    
-}
-@media(max-width: 1101px){
-    .about .btn-know-more{
-        padding: 0;
-    }
-    
-}
-@media(max-width: 1101px){
-    .about .btn-know-more{
-        padding: auto;
+    .about .item p{
+        text-align: left;
 
     }
-    
 }
 
 
@@ -278,7 +211,8 @@ body{
 }
 
 .services .service .btn-services{
-    color: var(--azul-escuro);
+    color: var(--branco);
+    background-color: var(--azul-escuro);
     font-weight: 900;
     text-transform: uppercase;
     border-radius: 50px;
@@ -288,7 +222,7 @@ body{
   
 }
  .services .service .btn-services:hover{
-    background-color:var(--branco);
+    box-shadow: 0 0 20px var(--azul-escuro);
  }
 
 
